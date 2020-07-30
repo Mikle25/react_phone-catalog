@@ -1,0 +1,31 @@
+.header {
+  display: grid;
+  grid-template-columns: 10% 1fr 130px;
+  height: 64px;
+
+  &__logo {
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-left: 1px solid $elements;
+  }
+
+  &__basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-left: 1px solid $elements;
+  }
+}

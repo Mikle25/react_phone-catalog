@@ -1,0 +1,41 @@
+.catalog {
+  padding: 82px 0 80px;
+
+  &__top {
+    display: grid;
+    grid-template-columns: max-content 80px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    @include titleH1;
+  }
+
+  &__control {
+    display: grid;
+    grid-template-columns: repeat(2, 32px);
+    justify-content: space-between;
+    height: 32px;
+  }
+
+  &__btn-previous {
+    border: 1px solid $elements;
+
+    .btn__arrow--1,
+    .btn__arrow--2 {
+      background: $icons;
+    }
+  }
+
+  &__btn-next {
+    border: 1px solid $icons;
+  }
+
+  &__models {
+    display: grid;
+    grid-template-columns: repeat(4, 272px);
+    grid-column-gap: 16px;
+    margin-top: 24px;
+  }
+}

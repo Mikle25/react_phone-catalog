@@ -1,0 +1,41 @@
+.btn {
+  position: relative;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid $icons;
+  outline: none;
+  background-color: transparent;
+
+  &__arrow {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+
+    background-color: $primary;
+
+  }
+
+  &__arrow--1 {
+    transform: rotate(-45deg);
+    transform-origin: left;
+  }
+
+  &__arrow--2 {
+    transform: rotate(45deg);
+    transform-origin: left;
+  }
+
+  &__arrow--3 {
+    transform: rotate(-45deg);
+    transform-origin: right;
+  }
+
+  &__arrow--4 {
+    transform: rotate(45deg);
+    transform-origin: right;
+  }
+}

@@ -1,0 +1,80 @@
+.card-phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 272px;
+
+  border: 1px solid $elements;
+
+  &__photo {
+    width: 208px;
+    height: 208px;
+    object-fit: contain;
+    object-position: center;
+    padding: 32px 32px 0;
+  }
+
+  &__about-phone {
+    padding: 24px;
+  }
+
+  &__model {
+    @include bodyText;
+  }
+
+  &__price {
+    display: flex;
+    padding: 8px 0;
+
+    border-bottom: 1px solid $elements;
+  }
+
+  &__discount {
+    @include titleH2;
+    padding-right: 8px;
+  }
+
+  &__full-price {
+    @include titleH2($weightH2: 500);
+    text-decoration: line-through $secondary;
+    color: $secondary;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 8px;
+    justify-content: space-between;
+    padding: 16px 0;
+
+    &-name {
+      @include smallText;
+    }
+
+    &-value {
+      justify-self: end;
+      @include smallText($textColor: $primary);
+    }
+  }
+
+  &__buy {
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    grid-template-rows: 40px;
+    grid-column-gap: 8px;
+  }
+
+  &__cart {
+    @include buttonText;
+    color: $white;
+
+    background-color: $primary;
+    border: none;
+  }
+
+  &__like {
+    background: url("../image/like-cone.svg") no-repeat center;
+
+    border: 1px solid $icons;
+  }
+}

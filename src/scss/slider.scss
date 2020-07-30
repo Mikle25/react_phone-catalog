@@ -1,0 +1,32 @@
+.slider {
+  display: grid;
+  grid-template-rows: 1fr 20px;
+  grid-row-gap: 18px;
+  padding-top: 40px;
+
+  &__block {
+    display: grid;
+    grid-template-columns: 32px 1fr 32px;
+    grid-column-gap: 16px;
+    max-width: 1136px;
+    height: 400px;
+  }
+
+  &__toggler {
+    display: grid;
+    grid-template-columns: repeat(3, 14px);
+    grid-column-gap: 14px;
+    justify-content: center;
+  }
+
+  &__point {
+    width: 14px;
+    height: 4px;
+
+    background-color: $elements;
+
+    &--1 {
+      background-color: $primary;
+    }
+  }
+}
